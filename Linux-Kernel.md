@@ -15,7 +15,7 @@ Quy trình này diễn ra như sau:
    Khi quá trình POST kết thúc thành công, BIOS sẽ tìm kiếm và khởi chạy một hệ điều hành được lưu trữ trong các thiết bị lưu trữ như ổ cứng, USB,.. 
    Hệ điều hành được cài trên ổ cứng thì BIOS sẽ tìm đến phần tiếp theo đó là MBR ( Master Boot Record) 
 ### Bước 2: Master Boot Record ( MBR )
-Sau khi BIOS xác định được thiết bị lưu trữ thì BIOS sẽ đọc trong MBR hoặc phân vùng EFI của thiết bị để nạp vào bộ nhớ một chương trì# nh. Chương trình này sẽ định vị và khởi động boot loader. 
+Sau khi BIOS xác định được thiết bị lưu trữ thì BIOS sẽ đọc trong MBR hoặc phân vùng EFI của thiết bị để nạp vào bộ nhớ một chương trình . Chương trình này sẽ định vị và khởi động boot loader. 
 ### Bước 3: Boot loader 
 Linux có 2 boot loader phổ biến trên Linux là GRUB và ISOLINUX 
 Chương trình này có mục đích cho phép lựa chọn hệ điều hành có trên máy tính để khởi động, sau đó chúng sẽ nạp kernel của hệ điều hành đó vào bộ nhớ ( RAM ) và chuyển quyền điều khiển máy tính cho kernel này. 
